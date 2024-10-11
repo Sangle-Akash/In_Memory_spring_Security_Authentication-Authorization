@@ -1,7 +1,7 @@
 # Application Name
-#spring:
- # application:
-  #  name: JPA_Operation  # Application name
+# spring:
+#   application:
+#     name: JPA_Operation  # Application name
 
 # Server Configuration
 server:
@@ -17,6 +17,14 @@ spring:
     hikari:
       maximum-pool-size: 10  # Optional: Configure connection pool size (optional)
 
+  # Security Configuration
+#  security:
+#    user:
+#      name: Akash          # Username for default user login
+#      password: Akash@0202  # Password for default user login
+  #   roles: USER         # Role for default user login (commented out)
+
+  # JPA and Hibernate Configuration
   jpa:
     hibernate:
       ddl-auto: update    # Automatically creates/updates the database schema
